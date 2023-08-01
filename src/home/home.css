@@ -1,0 +1,18 @@
+.home {
+  width: 95%;
+  margin: 8rem auto;
+}
+
+.gridcol {
+  padding-top: .5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.smartphones{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: black;
+  padding-top: 2rem;
+}

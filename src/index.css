@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html{
+    font-size: 62.5%;
+}
+li{
+  list-style-type: none;
+}
+a{
+ text-decoration: none;   
+}
+a:-webkit-any-link {
+ 
+  cursor: pointer;
+}
+a:link, a:hover, a:active, a:visited{
+  color: black;
+}
+::-webkit-scrollbar{
+  width: 0;
+}

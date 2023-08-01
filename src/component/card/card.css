@@ -1,0 +1,99 @@
+.card {
+    margin: .5rem;
+    height: 30rem;
+    width: 18rem;
+    border: .1rem rgb(209, 209, 209) solid;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.card:hover{
+    border: .1rem #2eb335 solid; ;
+}
+
+.discount {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    padding: .5rem;
+    color: white;
+    font-weight:bolder;
+    background-color: rgb(0, 140, 255);
+    z-index: 2;
+    font-size: 1rem;
+}
+
+.img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 100%;
+    height: 15rem;
+}
+
+.title {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: .8rem;
+    padding-top: .5rem;
+}
+.rating{
+    color: #8d8d8d;
+    font-size: 2rem;
+    padding-left: .8rem;
+    padding-top: 2rem;
+}
+
+
+.price {
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-left: .8rem;
+}
+.btn3{
+    float: right;
+    border:.1rem  #2eb335 solid;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    margin-top: -2.5rem;
+    padding: .7rem 1rem .7rem 1rem;
+    background-color: rgb(232, 255, 240);
+    color:#2eb335;
+    cursor: pointer;
+}
+.btn3:hover{
+   background-color:rgb(202, 252, 252);
+
+}
+.star{
+    color:rgb(224, 224, 0);
+    margin-left: .3rem;
+}
+
+
+
+
+@media screen and (max-width:399px){
+    .card {
+        margin: .5rem;
+        height: 30rem;
+        width: 14rem;
+        border: .1rem rgb(209, 209, 209) solid;
+        border-radius: 1rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .title {
+        color: #000;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-left: .8rem;
+        padding-top: .5rem;
+    }
+}
+
