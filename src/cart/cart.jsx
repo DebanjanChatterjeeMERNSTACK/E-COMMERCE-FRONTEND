@@ -114,46 +114,51 @@ const Cart = () => {
 
     }
 
-    const auths= document.cookie;
-    const email=localStorage.getItem("email");
+    const auths = document.cookie;
+    const email = localStorage.getItem("email");
     return (
         <>
             <Header />
             <div className="cartwidh">
                 <NavLink to={"/myoder"}><button className="btn6">Myoder</button></NavLink>
 
-                {!auths || auths==="" || email === "undefined" || email === "" || !email || cart.length===0 ?
-                 <img src={img2} width={300} height={300} className="imgeofcart" /> :
-                    cart && cart.map((e, ind) => {
-                        total = (e.price * e.quentity) + total
-                        return (
-                            <div className="cartitem" key={ind}>
-                                <div className="cartitemflex">
-                                    <div className="cartitemflexroe">
-                                        <div className="gricart">
-                                            <img src={e.thumbnail} className="cartimgsize" />
+                {
+                    !auths || auths === "" || email === "undefined" || email === "" || !email || cart.length === 0 ?
+
+                        <div className="imgeofcart" >
+                            <img src={img2} width={300} height={300} className="imgeofcart" />
+                        </div>
+                        :
+                        cart && cart.map((e, ind) => {
+                            total = (e.price * e.quentity) + total
+                            return (
+                                <div className="cartitem" key={ind}>
+                                    <div className="cartitemflex">
+                                        <div className="cartitemflexroe">
+                                            <div className="gricart">
+                                                <img src={e.thumbnail} className="cartimgsize" />
+                                            </div>
+                                            <div className="gridcart2">
+                                                <p className="text">{e.title}</p>
+                                                <p className="text">{e.brand}</p>
+                                                <p className="text">{e.quentity} pice</p>
+                                                <p className="text">${`${e.quentity * e.price}`}</p>
+                                            </div>
                                         </div>
-                                        <div className="gridcart2">
-                                            <p className="text">{e.title}</p>
-                                            <p className="text">{e.brand}</p>
-                                            <p className="text">{e.quentity} pice</p>
-                                            <p className="text">${`${e.quentity * e.price}`}</p>
+                                        <div className="">
+                                            <button className="btn5" onClick={() => handledelete(e.id)}>
+                                                Delete
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div className="">
-                                        <button className="btn5" onClick={() => handledelete(e.id)}>
-                                            Delete
-                                        </button>
                                     </div>
                                 </div>
-                            </div>
 
 
-                        )
+                            )
 
 
 
-                    })
+                        })
                 }
 
 

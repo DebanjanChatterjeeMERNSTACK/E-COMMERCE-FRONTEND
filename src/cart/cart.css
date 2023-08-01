@@ -5,9 +5,9 @@
     left: 0;
 }
 .imgeofcart{
-    position: relative;
-    top: 0;
-    left: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
 }
 
@@ -149,12 +149,6 @@
         width: 5rem;
         height: 5rem;
         border-radius: 1rem;
-    }
-    .imgeofcart{
-        position: relative;
-        top: 0;
-        left: 5%;
-    
     }
 
 }
