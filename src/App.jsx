@@ -10,7 +10,7 @@ import Productdetails from './productDetails/productdetails';
 import Search from './search/search';
 import Cart from './cart/cart';
 import Myoder from './myoder/myoder';
-import Profile from './pofile/Profile';
+import Profile from './profile/Profile';
 import Address from './addressupdate/addressupdate';
 
 const App = () => {
