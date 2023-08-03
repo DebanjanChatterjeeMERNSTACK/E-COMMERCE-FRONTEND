@@ -57,7 +57,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="headerlog" >
-                    <NavLink to={"/register"}> {email == "undefined" || email === "" || mess === "please login after you save cart" ? <BsFillPersonFill className="profilimg"   /> : <img src={imge} className="profilimg"  />}</NavLink>
+                    <NavLink to={"/profile"}> {email == "undefined" || email === "" || mess === "please login after you save cart" ? <BsFillPersonFill className="profilimg"   /> : <img src={imge} className="profilimg"  />}</NavLink>
                     </div>
                     <div className="headercart">
                         <NavLink to={"/cart"}>
