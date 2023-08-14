@@ -4,6 +4,11 @@
     top: 0;
     left: 0;
 }
+.btn9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .imgeofcart{
    display: flex;
    justify-content: center;

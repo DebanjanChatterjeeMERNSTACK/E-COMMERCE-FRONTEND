@@ -9,8 +9,8 @@ const Profile = () => {
     const email = localStorage.getItem("email")
     const [imge, setimge] = useState("")
     const [mess, setmess] = useState("")
-    const [emailuser, setEmail] = useState("user@gmail.com")
-    const [phone, setPhone] = useState("1234567890")
+    const [emailuser, setEmail] = useState("")
+    const [phone, setPhone] = useState("")
     const [address, setAddress] = useState("user address")
     const [nearloca, setNearloca] = useState("")
     const [city, setCity] = useState("")
@@ -56,10 +56,10 @@ const Profile = () => {
 
                 <div className="userprofile">
                     <div >
-                        <p className="profiletxt">{emailuser}</p>
+                      { email == "undefined" || email === "" || mess === "please login after you save cart" ? <p className="profiletxt">user@gmail.com</p> : <p className="profiletxt">{emailuser}</p> }
                     </div>
                     <div>
-                        <p className="profiletxt">{phone}</p>
+                    { email == "undefined" || email === "" || mess === "please login after you save cart" ? <p className="profiletxt">1234567890</p> :  <p className="profiletxt">{phone}</p>}
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ const Profile = () => {
 
                 <div className="userprofile2">
                     <div className="useradd">
-                        <p className="profiletxt">{address},{nearloca},{city},{state},{pincode}</p>
+                    { email == "undefined" || email === "" || mess === "please login after you save cart" ? <p className="profiletxt">user address</p> :<p className="profiletxt">{address},{nearloca},{city},{state},{pincode}</p>}
                     </div>
                     <div>
                         <NavLink to={"/addressupdate"}><button className="btn5">Update</button></NavLink>

@@ -6,6 +6,12 @@
     align-items: center;
 
 }
+.alerts{
+    color: rgb(255, 0, 0);
+    font-size: 1.3rem;
+    text-align: center;
+    
+}
 
 .regflex {
     width: 30rem;

@@ -124,9 +124,11 @@ const Cart = () => {
 
                 {
                     !auths || auths === "" || email === "undefined" || email === "" || !email || cart.length === 0 ?
-
-                        <div className="imgeofcart" >
-                            <img src={img2} width={300} height={300} className="imgeofcart" />
+                        <div >
+                            <div className="imgeofcart" >
+                                <img src={img2} width={300} height={300} className="imgeofcart" /><br/>
+                            </div>
+                           <NavLink to={"/"} className="btn9" > <button className="btn5" >GO TO HOME</button></NavLink>
                         </div>
                         :
                         cart && cart.map((e, ind) => {

@@ -65,6 +65,7 @@ const Register = () => {
                     <input type="text" placeholder="state" required className="fullname" value={state} onChange={(e) => setState(e.target.value)} /><br />
                     <input type="text" placeholder="pincode" required className="fullname" value={pincode} onChange={(e) => setPincode(e.target.value)} /><br />
                     <input type="file" className="fullname" accept=".png, .jpg, .jpeg" onChange={(e) => setImage(e.target.files[0])} required={true} /><br />
+                    <p className="alerts">*image upload one time don't change image 2nd time *</p>
                     <button className="btn1" onClick={handeleClick}>Register</button>
                     <NavLink to={"/login"}><p className="regtext">Login Now</p></NavLink>
                 </div>
