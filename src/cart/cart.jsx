@@ -120,7 +120,7 @@ const Cart = () => {
         <>
             <Header />
             <div className="cartwidh">
-                <NavLink to={"/myoder"}><button className="btn6">My Oder</button></NavLink>
+                <NavLink to={"/myoder"}><button className="btn6">My Order</button></NavLink>
 
                 {
                     !auths || auths === "" || email === "undefined" || email === "" || !email || cart.length === 0 ?
