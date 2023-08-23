@@ -100,7 +100,7 @@ const Profile = () => {
 
                 <div className="userprofile">
                     <div>
-                        <p className="profiletxt">Myoder</p>
+                        <p className="profiletxt">Myorder</p>
                     </div>
                     <div>
                         <NavLink to={"/myoder"}><button className="btn5"><BsArrowRight /></button></NavLink>

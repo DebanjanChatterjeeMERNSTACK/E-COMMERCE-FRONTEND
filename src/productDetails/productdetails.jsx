@@ -49,7 +49,8 @@ const Productdetails = () => {
         fetch("http://localhost:9000/cart", {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                auth: document.cookie
             },
             body: JSON.stringify(user)
         }).then(res => res.json())
