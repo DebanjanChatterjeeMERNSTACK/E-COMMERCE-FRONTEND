@@ -4,7 +4,8 @@ import { UserContext } from "../component/context";
 import Card from "../component/card/card";
 import Header from "../component/header/header";
 import Loder from "../component/loder/loder";
-import Sliderimg from "../component/slider";
+import Sliderimg from "../slider/slider";
+
 
 
 
