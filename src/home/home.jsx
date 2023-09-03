@@ -4,6 +4,8 @@ import { UserContext } from "../component/context";
 import Card from "../component/card/card";
 import Header from "../component/header/header";
 import Loder from "../component/loder/loder";
+import Sliderimg from "../component/slider";
+
 
 
 const Home = () => {
@@ -195,6 +197,7 @@ const Home = () => {
     return (
         <>
             <Header />
+           <Sliderimg/>
             <div className="home">
                 <p className="smartphones">Smart Phone</p>
                 <div className="gridcol">

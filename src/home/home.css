@@ -1,6 +1,6 @@
 .home {
   width: 95%;
-  margin: 8rem auto;
+  margin: 3rem auto;
 }
 
 .gridcol {
@@ -15,4 +15,11 @@
   font-weight: bolder;
   color: black;
   padding-top: 2rem;
+}
+.image{
+  width: 100%;
+  height: 70vh;
+}
+.sliderimg1{
+  margin-top: 8rem;
 }
