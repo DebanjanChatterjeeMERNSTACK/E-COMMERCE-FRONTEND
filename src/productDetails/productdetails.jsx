@@ -101,11 +101,11 @@ const Productdetails = () => {
                 <div className="sliderimgs">
                     <div className="sliderimg">
                         <div className="sliderimagewidth">
-                            {imageinst === false ? <img src={img} className="img7" /> : <Skeleton width={300} height={300} />}
+                            <img src={img} className="img7" /> 
                         </div>
                     </div>
                     <div className="slidershot">
-                        {imageinst === false ?
+                        {
 
                             slider.images && slider.images.slice(0, 4).map((e, ind) => {
                                 return (
@@ -116,7 +116,7 @@ const Productdetails = () => {
                                 )
 
                             })
-                            : <Skeleton width={350} height={90} />
+                            
 
                         }
                     </div>
@@ -132,7 +132,7 @@ const Productdetails = () => {
                     <div className="dtetmarp">
                         <div className="pageren"><NavLink to={"/"}><span className="pegego">Home</span></NavLink> / <span>{slider.category || <Skeleton width={50} />}</span></div>
                         <p className="titler">{slider.title || <Skeleton width={300} />}</p>
-                        <p className="rate">Description: <span className="reater"> {slider.description || <Skeleton count={2} width={500} />}</span></p>
+                        <p className="rate">Description: <span className="reater"> {slider.description || <Skeleton count={2} width={300} />}</span></p>
                         <p className="rate">Rating: <span className="reater"> {slider.rating || <Skeleton width={50} />}</span></p>
                         <p className="rate">Discount:<span className="reater">{slider.discountPercentage || <Skeleton width={50} />}</span></p>
 

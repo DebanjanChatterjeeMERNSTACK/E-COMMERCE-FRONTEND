@@ -19,6 +19,7 @@
     background-color:rgb(235 235 235);
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow-x: hidden;
    
 }
 .regflex1 {

@@ -42,7 +42,7 @@ const Register = () => {
             })
                 .then(res => res.json())
                 .then(json => alert(json.mess))
-        }else{
+        } else {
             alert("please upload image")
         }
     }

@@ -18,20 +18,20 @@ import image2 from "../component/logo/watch.jpg";
 const Sliderimg = () => {
 
 
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    };
+    // const settings = {
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    // };
 
 
 
     return (
         <>
-            <div className='sliderimg1'>
+            {/* <div className='sliderimg1'>
                 <Slider {...settings}>
                     <div>
                         <img src={image1} className='image' />
@@ -43,8 +43,10 @@ const Sliderimg = () => {
                         <img src={image} className='image' />
                     </div>
                 </Slider>
+            </div> */}
+            <div className='sliderimg1'>
+                <img src={image1} className='image' />
             </div>
-
 
         </>
     );

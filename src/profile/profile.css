@@ -16,6 +16,7 @@
     color: black;
     padding-left: 1rem;
     padding-right: 1rem;
+    word-break: break-word;
 }
 .userprofile2{
   width: 100%;
