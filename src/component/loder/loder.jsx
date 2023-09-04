@@ -3,14 +3,9 @@ import "./loder.css"
 
 const Loder = () => {
     return (
-        <>{
-            [1, 2, 3, 4, 5].map((e) => {
-                return (
-                    <div className="lds-roller" key={e}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                )
-            })
-
-        }
+        <>
+                    <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          
         </>
     )
 }
