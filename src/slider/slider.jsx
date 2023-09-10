@@ -37,12 +37,14 @@ const Sliderimg = () => {
         <>
             <div className='sliderimg1'>
                 <Swiper
-                    spaceBetween={30}
+                    spaceBetween={20}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 1000,
+                        delay: 1,
                         disableOnInteraction: false,
                     }}
+                    speed={2000}
+                    loop={true}
                     pagination={{
                         clickable: true,
                     }}
